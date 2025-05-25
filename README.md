@@ -5,6 +5,8 @@ So, I wrote this script.
 
 The entire script is a bash script using one tool, IPMI. If you don't know what IPMI is, click [here](https://en.wikipedia.org/wiki/Intelligent_Platform_Management_Interface)
 
+**There are some things you need to change in the script; use nano or vim notepad. Whatever works. They have comments next to them making them easy to find.
+
 # How this script works
 
 There are two main functions; "grab_ipmi_temp_data" which grabs temperature data from the machine. The next function, "get_cpu_temp" uses piped grap and awk commands to **ONLY** pull the 3rd temp value from the temp data function. **If you want to change this, make sure to edit the | awk 'NR==3" | line. This determines the line you want to read from. 
