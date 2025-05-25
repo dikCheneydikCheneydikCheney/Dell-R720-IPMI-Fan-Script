@@ -5,7 +5,7 @@ So, I wrote this script.
 
 The entire script is a bash script using one tool, IPMI. If you don't know what IPMI is, click [here](https://en.wikipedia.org/wiki/Intelligent_Platform_Management_Interface)
 
-**There are some things you need to change in the script; use nano or vim notepad. Whatever works. They have comments next to them making them easy to find.
+**There are some things you need to change in the script; use nano or vim notepad. Whatever works. They have comments next to them making them easy to find.**
 
 # How this script works
 
