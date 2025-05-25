@@ -76,7 +76,7 @@ t100=100
 ipmi_temp_data="[replace/path]ipmi_temperature_cache.txt"
 
 grab_ipmi_temp_data(){
-	ipmitool -I lanplus -H 192.168.0.120 -U test -P test sdr type Temperature > $ipmi_temp_data
+	ipmitool -I lanplus -H 192.168.0.10 -U root -P calvin sdr type Temperature > $ipmi_temp_data #change this line!
 	if [[ $? -ne 0 ]]; then
 		return 1
 	fi 
