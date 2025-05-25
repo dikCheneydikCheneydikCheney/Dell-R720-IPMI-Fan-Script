@@ -1,10 +1,5 @@
 #!/bin/bash
-#IPMI script template
-
-#Goal of script: Baseline script for fan automation so I don't hear fucking screaming all the goddam time from my R720
-
-#TODO: Check Temps, if temps are at this range, set to RPM percent. Focus on CPU temps
-
+#IPMI script
 #HEX FAN VALUES:
 # 0% RPM | 0x00
 # 5% RPM | 0x05
@@ -15,17 +10,17 @@
 # 30% RPM | 0x1e
 # 35% RPM | 0x23
 # 40% RPM | 0x28 
-# 45% RPM |	0x2D
+# 45% RPM | 0x2D
 # 50% RPM | 0x32
 # 55% RPM | 0x37	
 # 60% RPM | 0x3c
-# 65% RPM |	0x41
+# 65% RPM | 0x41
 # 70% RPM | 0x46
-# 75% RPM |	0x4B
+# 75% RPM | 0x4B
 # 80% RPM | 0x50
 # 85% RPM | 0x55
 # 90% RPM | 0x5a
-# 95% RPM |	0x5F
+# 95% RPM | 0x5F
 # 100% RPM | 0x64
 
 #ESTABLISHING VARIABLES
@@ -140,7 +135,7 @@ while true; do
 	fi
 
 echo "===================Temps For System===================="
-cat "[replace/path]ipmi_temperature_cache.txt"
+cat "[replace/path]ipmi_temperature_cache.txt" #change this path!
 echo "======================================================="
 echo ""
 echo "Last Updated: $last_date_time"
