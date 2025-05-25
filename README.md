@@ -13,12 +13,11 @@ Temps are measured in "t" variables with a number aside it, EX: **t**50
 Fan Percentage is in "f" variables with a number aside it, EX: **f**50
 
 Finally, the main part of the script is a massive if, elif, else statement. It pulls the current temp value and performs "less than" to the temperature value. If the temp is less than the number met, it then puts the R720 fans at a predetermined fan speed (which is in the Fan variables)
-`
+```
 	if (( temp <  t40 )); then
 		$ipmitoolFull $f30
 		echo "Current Fan Percentage: 30%"
 	elif (( temp < t45 )); then
 		$ipmitoolFull $f35
 		echo "Current Fan Percentage: 35%"
-`
-a
+```
