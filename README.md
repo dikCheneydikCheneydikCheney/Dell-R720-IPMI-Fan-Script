@@ -21,3 +21,4 @@ Finally, the main part of the script is a massive if, elif, else statement. It p
 		$ipmitoolFull $f35
 		echo "Current Fan Percentage: 35%"
 `
+a
