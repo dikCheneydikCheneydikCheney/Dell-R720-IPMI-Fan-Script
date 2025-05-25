@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3a02de2d-e626-4c00-bcc7-b3e44649fb8d)# Dell R720 IPMI Fan Script
+# Dell R720 IPMI Fan Script
 
 Howdy! I wrote out this script to fix an existing problem that I was experiencing with my hardware. TLDR: the fans on my R720 are too loud, and atm I don't have anywhere else to store it that isn't inconvenient. 
 So, I wrote this script.
