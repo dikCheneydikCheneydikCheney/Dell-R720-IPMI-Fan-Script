@@ -29,4 +29,5 @@ If you do run this script in a more critical environment, first, why? Second, on
 
 Personally, I wrote this for my home lab. This script is on one Raspberry Pi with a physical screen so I can watch temps live. If I want to remotely check temps, I can just check my iDRAC. 
 
+#
 ![thanks](https://github.com/user-attachments/assets/a93fcd9c-dd5a-49d8-b2e4-12ba635061e9)
