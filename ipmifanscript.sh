@@ -15,17 +15,17 @@
 # 30% RPM | 0x1e
 # 35% RPM | 0x23
 # 40% RPM | 0x28 
-# 45% RPM |	0x2D
+# 45% RPM | 0x2D
 # 50% RPM | 0x32
 # 55% RPM | 0x37	
 # 60% RPM | 0x3c
-# 65% RPM |	0x41
+# 65% RPM | 0x41
 # 70% RPM | 0x46
-# 75% RPM |	0x4B
+# 75% RPM | 0x4B
 # 80% RPM | 0x50
 # 85% RPM | 0x55
 # 90% RPM | 0x5a
-# 95% RPM |	0x5F
+# 95% RPM | 0x5F
 # 100% RPM | 0x64
 
 #ESTABLISHING VARIABLES
@@ -78,7 +78,7 @@ t100=100
 #beginning of functions
 #MAKE SURE TO REPLACE PATH!
 
-ipmi_temp_data="/home/vboxuser/Desktop/ipmi_temperature_cache.txt"
+ipmi_temp_data="[replace/path]ipmi_temperature_cache.txt" 
 
 grab_ipmi_temp_data(){
 	ipmitool -I lanplus -H $hostip -U $username -P $password sdr type Temperature > $ipmi_temp_data
@@ -150,7 +150,7 @@ while true; do
 	fi
 
 echo "===================Temps For System===================="
-cat "/home/vboxuser/Desktop/ipmi_temperature_cache.txt"
+cat "[replace/path]ipmi_temperature_cache.txt"
 echo "======================================================="
 echo ""
 echo "Last Updated: $last_date_time"
